@@ -2,10 +2,11 @@
 
 ### what do you get:
 - [ ] running Ubuntu Server VM
-- [ ] running master branch of star-exec-presenter
+- [ ] deployed master branch of star-exec-presenter
 
 
 ### what you need:
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [vagrant](http://docs.vagrantup.com/v2/installation/index.html)
 * [saltstack](http://docs.saltstack.com/en/latest/)
 
@@ -17,8 +18,8 @@
 provisioning:
 - [ ] ghc
 - [ ] cabal
-- [ ]  cabal-install
+- [ ] cabal-install
 
 
 source:
-- [ ]  add star-exec-presenter as submodule
+- [ ] add star-exec-presenter as submodule
