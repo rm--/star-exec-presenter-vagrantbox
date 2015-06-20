@@ -1,8 +1,11 @@
-deb http://ftp.de.debian.org/debian stable main
-deb-src http://ftp.de.debian.org/debian stable main
+deb http://archive.ubuntu.com/ubuntu trusty main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu trusty main restricted universe multiverse
 
-deb http://ftp.debian.org/debian/ wheezy-updates main
-deb-src http://ftp.debian.org/debian/ wheezy-updates main
+deb http://archive.ubuntu.com/ubuntu trusty-updates main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu trusty-updates main restricted universe multiverse
 
-deb http://security.debian.org/ wheezy/updates main
-deb-src http://security.debian.org/ wheezy/updates main
+deb http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
