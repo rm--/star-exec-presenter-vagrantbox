@@ -1,7 +1,7 @@
 ## Vagrantbox for [star-exec-presenter](https://github.com/stefanvonderkrone/star-exec-presenter)
 
 ### what do you get:
-- [ ] running Ubuntu Server VM
+- [x] running Ubuntu Server VM
 - [ ] deployed master branch of star-exec-presenter
 
 
@@ -16,10 +16,15 @@
 3. start your favorite webbrowser and look at: localhost ...
 
 provisioning:
-- [ ] ghc
-- [ ] cabal
+- [x] ghc
+- [x] cabal
 - [ ] cabal-install
+- [ ] PostgreSQL
+- [ ] installation of star-exec-presenter
 
 
 source:
 - [ ] add star-exec-presenter as submodule
+
+todo:
+- [ ] introduce HASKELL_VERSION variable to switch easily the version
