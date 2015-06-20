@@ -1,6 +1,6 @@
 base:
   '*':
     - apt
-    - curl
-    - tree
-    - vim
+    - packages
+    - ghc
+    - cabal
