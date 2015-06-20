@@ -9,9 +9,10 @@ cabal:
         tar xzvf Cabal-1.22.3.0.tar.gz
         cd Cabal-1.22.3.0
         ghc -threaded --make Setup
-        ./Setup configure --user
+        ./Setup configure
         ./Setup build
-        ./Setup install
+        sudo ./Setup install
+        rm -rfv /tmp/Cabal-1.22.3.0 /tmp/Cabal-1.22.3.0.tar.gz
     - shell: /bin/bash
     - require:
       - sls: ghc
