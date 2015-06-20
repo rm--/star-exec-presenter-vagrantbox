@@ -27,4 +27,7 @@ source:
 - [ ] add star-exec-presenter as submodule
 
 todo:
-- [ ] introduce HASKELL_VERSION variable to switch easily the version
+- [ ] introduce HASKELL_VERSION variable to switch easily GHC version
+- [ ] check box memory
+- [ ] don't forget to add sandbox path to env var PATH
+- [ ] try setup with Ubuntu
