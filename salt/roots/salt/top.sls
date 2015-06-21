@@ -5,3 +5,4 @@ base:
     - ghc
     - cabal
     - cabal-install
+    - postgres
