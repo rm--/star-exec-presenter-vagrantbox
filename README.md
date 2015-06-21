@@ -23,8 +23,9 @@ provisioning:
 - [ ] installation of star-exec-presenter
 
 
-source:
-- [ ] add star-exec-presenter as submodule
+submodules:
+- [x] graphviz
+- [x] star-exec-presenter
 
 todo:
 - [ ] introduce HASKELL_VERSION variable to switch easily GHC version
