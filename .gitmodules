@@ -1,0 +1,6 @@
+[submodule "star-exec-presenter"]
+	path = star-exec-presenter
+	url = git@github.com:stefanvonderkrone/star-exec-presenter.git
+[submodule "graphviz"]
+	path = graphviz
+	url = git@github.com:jwaldmann/graphviz.git
