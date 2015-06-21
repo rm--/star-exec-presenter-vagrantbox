@@ -1,3 +1,6 @@
+include:
+  - cabal
+
 cabal-install:
   cmd.run:
     - cwd: /tmp

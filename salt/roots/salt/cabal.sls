@@ -1,3 +1,6 @@
+include:
+  - ghc
+
 cabal:
   cmd.run:
     - cwd: /tmp
@@ -18,4 +21,3 @@ cabal:
     - shell: /bin/bash
     - require:
       - sls: ghc
-

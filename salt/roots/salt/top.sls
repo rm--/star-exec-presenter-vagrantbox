@@ -6,3 +6,4 @@ base:
     - cabal
     - cabal-install
     - postgres
+    - star-exec-presenter

@@ -1,3 +1,7 @@
+include:
+  - apt
+  - packages
+
 ghc:
   cmd.run:
     - cwd: /tmp
