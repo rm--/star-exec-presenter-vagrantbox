@@ -9,8 +9,8 @@ preparations:
     - name: |
         echo "export PATH=.cabal-sandbox/bin:$PATH" >> ~/.profile
         source ~/.profile
-        cabal update
         cabal sandbox init
+        cabal update
     - shell: /bin/bash
     - require:
       - sls: cabal-install

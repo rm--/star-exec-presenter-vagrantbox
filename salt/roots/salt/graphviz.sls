@@ -1,3 +1,6 @@
+include:
+  - preparations
+
 graphviz:
   cmd.run:
     - cwd: /vagrant/star-exec-presenter
@@ -7,4 +10,4 @@ graphviz:
         cabal install graphviz
     - shell: /bin/bash
     - require:
-      - file: preparations
+      - sls: preparations

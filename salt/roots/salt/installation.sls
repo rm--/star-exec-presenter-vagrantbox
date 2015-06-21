@@ -1,3 +1,6 @@
+include:
+  - preparations
+
 installation:
   cmd.run:
     - cwd: /vagrant/star-exec-presenter

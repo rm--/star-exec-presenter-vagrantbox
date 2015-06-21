@@ -1,3 +1,7 @@
+include:
+  - installation
+  # - graphviz
+
 yesod-devel:
   cmd.run:
     - cwd: /vagrant/star-exec-presenter
@@ -7,4 +11,4 @@ yesod-devel:
     - shell: /bin/bash
     - require:
       - sls: installation
-      - sls: graphviz
+      # - sls: graphviz
