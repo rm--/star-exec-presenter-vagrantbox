@@ -18,8 +18,8 @@
 provisioning:
 - [x] ghc
 - [x] cabal
-- [ ] cabal-install
-- [ ] PostgreSQL
+- [x] cabal-install
+- [x] PostgreSQL
 - [ ] installation of star-exec-presenter
 
 
