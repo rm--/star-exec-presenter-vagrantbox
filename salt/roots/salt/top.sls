@@ -4,3 +4,4 @@ base:
     - packages
     - ghc
     - cabal
+    - cabal-install
