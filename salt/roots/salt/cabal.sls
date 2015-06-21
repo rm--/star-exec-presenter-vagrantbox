@@ -15,7 +15,7 @@ cabal:
         ./Setup configure
         ./Setup build
         sudo ./Setup install
-        echo "export PATH=.cabal/bin:$PATH" >> ~/.profile
+        echo "export PATH=~/.cabal/bin:$PATH" >> ~/.profile
         source ~/.profile
         rm -rfv /tmp/Cabal-1.22.3.0 /tmp/Cabal-1.22.3.0.tar.gz
     - shell: /bin/bash
