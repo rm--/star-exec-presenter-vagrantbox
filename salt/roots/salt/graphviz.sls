@@ -7,7 +7,6 @@ graphviz:
     - user: vagrant
     - name: |
         cabal sandbox add-source /vagrant/graphviz
-        cabal install graphviz
     - shell: /bin/bash
     - require:
       - sls: preparations
