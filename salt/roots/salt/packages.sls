@@ -10,3 +10,8 @@ libgmp-dev:
 zlib1g-dev:
   pkg.installed
 
+libpq-dev:
+  pkg.installed
+
+g++:
+  pkg.installed

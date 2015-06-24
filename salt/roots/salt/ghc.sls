@@ -2,21 +2,23 @@ include:
   - apt
   - packages
 
+{% set GHC_VERSION = '7.10.1' %}
+
 ghc:
   cmd.run:
     - cwd: /tmp
     - user: vagrant
     - name: |
-        wget https://www.haskell.org/ghc/dist/7.8.4/ghc-7.8.4-x86_64-unknown-linux-deb7.tar.bz2
-        tar xvfj ghc-7.8.4-x86_64-unknown-linux-deb7.tar.bz2
-        cd ghc-7.8.4
-        sudo mkdir -p /opt/ghc-7.8.4
-        ./configure --prefix=/opt/ghc-7.8.4
+        wget https://downloads.haskell.org/~ghc/7.10-latest/ghc-{{ GHC_VERSION }}-x86_64-unknown-linux-deb7.tar.bz2
+        tar xvfj ghc-{{ GHC_VERSION }}-x86_64-unknown-linux-deb7.tar.bz2
+        cd ghc-{{ GHC_VERSION }}
+        sudo mkdir -p /opt/ghc-{{ GHC_VERSION }}
+        ./configure --prefix=/opt/ghc-{{ GHC_VERSION }}
         sudo make install
-        echo "export GHC_HOME=/opt/ghc-7.8.4/" >> ~/.profile
-        echo "export PATH=/opt/ghc-7.8.4/bin:$PATH" >> ~/.profile
+        echo "export GHC_HOME=/opt/ghc-{{ GHC_VERSION }}" >> ~/.profile
+        echo "export PATH=/opt/ghc-{{ GHC_VERSION }}/bin:$PATH" >> ~/.profile
         source ~/.profile
-        rm -rfv /tmp/ghc-7.8.4 /tmp/ghc-7.8.4-x86_64-unknown-linux-deb7.tar.bz2
+        rm -rfv /tmp/ghc-{{ GHC_VERSION }} /tmp/ghc-{{ GHC_VERSION }}-x86_64-unknown-linux-deb7.tar.bz2
     - shell: /bin/bash
     - require:
       - sls: apt
