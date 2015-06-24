@@ -8,14 +8,23 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "trusty64-server"
   config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
 
-  ## enable internet in guest
+
   config.vm.network "public_network"
   config.vm.provider "virtualbox" do |v|
+    ## enable internet in guest
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
-    v.memory = 100000
+
+    ## vm parameters
+    v.memory = 2000
     v.cpus = 2
+
+    ## yesod port forwarding
+    config.vm.network "forwarded_port", guest: 3000, host: 3000,
+    auto_correct: true
   end
+
+
 
   ## provisoning using saltstack
   ## For masterless, mount your salt file root
@@ -26,6 +35,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     salt.run_highstate = true
 
     ## debug
-    salt.verbose = false
+    salt.verbose = true
   end
 end
