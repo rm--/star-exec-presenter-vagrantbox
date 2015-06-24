@@ -2,7 +2,7 @@
 
 ### what do you get:
 - [x] running Ubuntu Server VM
-- [ ] deployed master branch of star-exec-presenter
+- [x] deployed master branch of star-exec-presenter
 
 
 ### what you need:
@@ -20,7 +20,7 @@ provisioning:
 - [x] cabal
 - [x] cabal-install
 - [x] PostgreSQL
-- [ ] installation of star-exec-presenter
+- [x] installation of star-exec-presenter
 
 
 submodules:
@@ -28,6 +28,4 @@ submodules:
 - [x] star-exec-presenter
 
 todo:
-- [ ] introduce GHC_VERSION constant to switch version easily
-- [ ] check box memory
 - [ ] try setup with Ubuntu
