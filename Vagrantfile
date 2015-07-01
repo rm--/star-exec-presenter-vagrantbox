@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
 
     ## vm parameters
-    v.memory = 2000
+    v.memory = 4000
     v.cpus = 2
 
     ## yesod port forwarding
