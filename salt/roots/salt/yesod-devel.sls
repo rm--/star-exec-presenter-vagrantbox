@@ -1,6 +1,5 @@
 include:
   - installation
-  - graphviz
 
 yesod-devel:
   cmd.run:
@@ -11,4 +10,3 @@ yesod-devel:
     - shell: /bin/bash
     - require:
       - sls: installation
-      - sls: graphviz

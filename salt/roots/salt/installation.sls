@@ -6,8 +6,7 @@ installation:
     - cwd: /vagrant/star-exec-presenter
     - user: vagrant
     - name: |
-        cabal install alex happy yesod-bin
-        cabal install --enable-tests .
+        make install
     - shell: /bin/bash
     - require:
       - sls: preparations

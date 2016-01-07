@@ -7,6 +7,5 @@ base:
     - cabal-install
     - postgres
     - preparations
-    - graphviz
     - installation
     - yesod-devel
