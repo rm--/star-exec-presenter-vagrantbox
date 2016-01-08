@@ -6,6 +6,4 @@ base:
     - cabal
     - cabal-install
     - postgres
-    - preparations
-    - installation
-    - yesod-devel
+    - star-exec-presenter

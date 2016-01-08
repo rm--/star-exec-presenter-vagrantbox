@@ -24,8 +24,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     auto_correct: true
   end
 
-
-
   ## provisoning using saltstack
   ## For masterless, mount your salt file root
   config.vm.synced_folder "salt/roots/", "/srv/"
