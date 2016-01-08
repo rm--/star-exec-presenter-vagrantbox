@@ -1,17 +1,16 @@
-vim:
-  pkg.installed
+postgresql-pkgs:
+  pkg.installed:
+    - names:
+      - libpq-dev
 
-wget:
-  pkg.installed
+dev-pkgs:
+  pkg.installed:
+    - names:
+      - libgmp-dev
+      - zlib1g-dev
+      - g++
 
-libgmp-dev:
-  pkg.installed
-
-zlib1g-dev:
-  pkg.installed
-
-libpq-dev:
-  pkg.installed
-
-g++:
-  pkg.installed
+star-exec-presenter-pkgs:
+  pkg.installed:
+    - names:
+      - graphviz

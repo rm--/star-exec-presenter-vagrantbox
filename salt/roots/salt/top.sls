@@ -5,5 +5,5 @@ base:
     - ghc
     - cabal
     - cabal-install
-    - postgres
+    - postgresql
     - star-exec-presenter

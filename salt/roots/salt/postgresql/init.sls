@@ -16,7 +16,7 @@ postgresql:
     - user: postgres
     - group: postgres
     - mode: 644
-    - source: salt://postgres/pg_hba.conf
+    - source: salt://postgresql/pg_hba.conf
     - require:
       - pkg: postgresql-{{ POSTGRESQL_VERSION }}
 

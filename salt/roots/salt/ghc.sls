@@ -22,6 +22,5 @@ ghc:
     - shell: /bin/bash
     - require:
       - sls: apt
-      - pkg: wget
       - pkg: libgmp-dev
       - pkg: zlib1g-dev

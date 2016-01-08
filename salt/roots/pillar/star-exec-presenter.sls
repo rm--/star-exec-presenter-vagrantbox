@@ -1,0 +1,3 @@
+starexec:
+  login: " "
+  password: " "

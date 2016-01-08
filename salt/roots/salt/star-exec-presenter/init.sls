@@ -1,13 +1,17 @@
+include:
+  - cabal-install
+  - postgresql
+
 preparations:
   cmd.run:
     - cwd: /vagrant/star-exec-presenter
     - name: |
-        echo "export PATH=.cabal-sandbox/bin:$PATH" >> ~/.profile
+        echo "export PATH=/vagrant/star-exec-presenter/.cabal-sandbox/bin:$PATH" >> ~/.profile
         source ~/.profile
     - shell: /bin/bash
     - require:
       - sls: cabal-install
-      - sls: postgres
+      - sls: postgresql
 
 installation:
   cmd.run:
