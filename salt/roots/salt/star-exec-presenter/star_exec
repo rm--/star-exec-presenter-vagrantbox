@@ -1,1 +1,1 @@
-Login {{ pillar['starexec']['login'] }} {{ pillar['starexec']['password'] }}
+Login " " " "

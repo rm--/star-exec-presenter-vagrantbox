@@ -12,5 +12,5 @@
 ### what to do:
 1. `git clone --recursive git@github.com:rm--/star-exec-presenter-vagrantbox.git`
 2. `vagrant up` and choose network interface
-3. enter your [starexec credentials](salt/roots/pillar/star-exec-presenter.sls)
+3. enter your [starexec credentials](salt/roots/salt/star-exec-presenter/star_exec)
 4. start your favorite web browser and take a look at: `localhost:3000/concepts/7239`

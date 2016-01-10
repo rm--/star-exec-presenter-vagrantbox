@@ -1,3 +1,0 @@
-base:
-  '*':
-    - star-exec-presenter

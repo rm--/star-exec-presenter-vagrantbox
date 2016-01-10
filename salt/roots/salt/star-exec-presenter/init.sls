@@ -4,6 +4,7 @@ include:
 
 preparations:
   cmd.run:
+    - user: vagrant
     - cwd: /vagrant/star-exec-presenter
     - name: |
         echo "export PATH=/vagrant/star-exec-presenter/.cabal-sandbox/bin:$PATH" >> ~/.profile
@@ -16,15 +17,21 @@ preparations:
 installation:
   cmd.run:
     - cwd: /vagrant/star-exec-presenter
+    - user: vagrant
     - name: make install
+    - shell: /bin/bash
 
 /home/vagrant/.star_exec:
   file.managed:
+    - user: vagrant
+    - group: vagrant
     - mode: 644
     - source: salt://star-exec-presenter/star_exec
 
 yesod-devel:
   cmd.run:
     - cwd: /vagrant/star-exec-presenter
+    - user: vagrant
     - name: yesod devel
+    - shell: /bin/bash
     - file: /home/vagrant/.star_exec
